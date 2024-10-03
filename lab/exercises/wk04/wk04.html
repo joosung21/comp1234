@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a basic HTML web page.">
+    <meta name="keywords" content="Html, lists, images, sememtic, link">
+    <meta name="author" content="Joosung Ahn">
+    <title>Basic HTML Web Page for the week 4 Comp1234 Lab</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <style>
+        ol {
+            list-style-type: decimal-leading-zero;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <h1>Basic HTML Web Page for the week 4 Comp1234 Lab</h1>
+        <a href="#bottom">go to the bottom of the page</a>
+    </header>
+    <main>
+        <h2 class="ccolour">Block and inline tags.</h2>
+        <p>This is a plain text block element.</p>
+
+        <strong>bold inline element.</strong>
+        <strong>this is another bold inline element.</strong>
+
+        <p>
+            This is a block element with
+            <strong>
+                a bold inline element
+            </strong>
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Attributes</h2>
+        
+        <p id="idatt">This id attribute allows us to uniquely identify an element/tag and allows us to style it using CSS.</p>
+        <p id="bcolour">This id attribute allows us to uniquely identify an element/tag and allows us to style it using CSS.</p>
+        <p class="ccolour">This id attribute allows us to uniquely identify an element/tag and allows us to style it using CSS.</p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <h3>Link/Anchor</h3>
+        <a href="https://www.georgebrown.ca" target="_blank">George Brown College</a>
+        
+        <p>
+            <a href="../wk02/wk02.html">wk02.html file using a document relative path</a>
+        </p>
+        <p>
+            <a href="/index.html">index.html file using a root relative path</a>
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <h3>Lists</h3>
+        <h4>Unordered List</h4>
+        <ul>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+            <li>kiwi</li>
+            <li>
+                <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">More about HTML lists</a>
+            </li>
+        </ul>
+        <h4>Ordered List</h4>
+        <ol>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+            <li>kiwi</li>
+            <li>
+                <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">More about HTML lists</a>
+            </li>
+            <li>
+                <ol type="i">
+                    <li>apple</li>
+                    <li>orange</li>
+                    <li>banana</li>
+                    <li>kiwi</li>
+                    <li>
+                        <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">More about HTML lists</a>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <br>
+        <hr>
+        <br>
+
+        <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">
+            <img src="assets/img/cat.jpg" alt="cat winking" width="288" height="192" title="cat winking">
+        </a>
+        <img src="assets/img/cat.jpg" alt="cat winking" width="188" height="140">
+        <img src="assets/img/cat.jpg" alt="cat winking" width="80" height="60">
+
+        <figure>
+            <img src="assets/img/folders_comp1234.png" alt="folders">
+            <figcaption>folders</figcaption>
+        </figure>
+    </main>
+
+    <footer id="bottom">
+        <p>copyright &copy; 2024 by Joosung&reg; &lt;reg&gt;</p>
+        <a href="#top">go to the top of the page</a>
+    </footer>
+
+    <br>
+    <br>
+    <br>
+    <script src="https://my.gblearn.com/js/loadscript.js"></script>
+</body>
+</html>

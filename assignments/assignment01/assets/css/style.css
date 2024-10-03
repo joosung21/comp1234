@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+    margin: 10px;
+}
+li {
+    padding: 10px;
+}
+a {
+    display: block;
+    color: #0b6ad6;
+}

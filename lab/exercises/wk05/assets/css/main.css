@@ -1,0 +1,35 @@
+body {
+    background-color: #f9f6f0;
+    margin: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    color: #0067a6; 
+    font-style: italic;
+}
+
+li { 
+    font-size: 1.5em; 
+}
+
+li:first-child { 
+    background-color: lightblue; 
+}
+
+li:last-child { 
+    background-color: pink; 
+}
+
+li:nth-child(2) { 
+    background-color: yellow; 
+}
+
+footer {
+    border: 2px solid black;
+    padding: 0 1em;
+}
+
+#cssValidation {
+    margin-top: 40px;
+}
