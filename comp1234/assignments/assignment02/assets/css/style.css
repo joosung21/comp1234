@@ -8,6 +8,7 @@ header {
     position: relative;
     height: 100vh;
     background: url('../img/gbc.jpg') no-repeat center center/cover;
+    z-index: 1001;
 }
 
 
@@ -163,10 +164,11 @@ footer a {
 }
 
 #backToTop {
-    display: block;
+    display: inline-block;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    width: 24px;
     background-color: white;
     color: #444;
     padding: 10px 13px;
@@ -237,6 +239,10 @@ section#speakers figure img {
 /* Section: Gallery */
 section#gallery {
     background: linear-gradient(135deg, #a34fc4, #a46cf8);
+}
+
+section#gallery article {
+    clear: both;
 }
 
 section#gallery figure {
