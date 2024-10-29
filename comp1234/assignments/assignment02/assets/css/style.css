@@ -241,10 +241,6 @@ section#gallery {
     background: linear-gradient(135deg, #a34fc4, #a46cf8);
 }
 
-section#gallery article {
-    clear: both;
-}
-
 section#gallery figure {
     float: left;
     text-align: center;
