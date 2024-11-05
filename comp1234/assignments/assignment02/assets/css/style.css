@@ -427,6 +427,10 @@ section#reflection .author small {
     display: block;
 }
 
+section#reflection a {
+    color: white !important;
+}
+
 .backToEvent {
     max-width: 1000px;
     margin: 0 auto;
