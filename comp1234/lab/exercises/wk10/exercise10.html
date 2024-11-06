@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a basic HTML and CSS web page.">
+    <meta name="keywords" content="Html, CSS, relative, absolute, colour, section">
+    <meta name="author" content="Joosung Ahn">
+    <title>Week 10 Comp1234 Lab</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+        </header>
+        <main>
+            <section id="formSection">
+                <form method="get" action="https://comp1234.gblearn.com/fall2024/lecture/wk10/WhereToSendThisInformation.php">
+                    <fieldset>
+                        <legend>Comment Form</legend>
+
+                        <div class="box">
+                            <label for="name">Your Name: <span>*</span></label>
+                            <div class="split">
+                                <input type="text" name="fname" id="fname" placeholder="First" required>
+                                <input type="text" name="lname" id="lname" placeholder="Last" required>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <label for="email">Email: <span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="box">
+                            <label for="subject">Subject of comment: <span>*</span></label>
+                            <select name="subject" id="subject" required>
+                                <option value="problem">Problem</option>
+                                <option value="comment">Comment</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <label for="comments">Comments: <span>*</span></label>
+                            <textarea name="comments" id="comments" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Joosung Ahn</p>
+        </footer>
+    </div>
+
+    <div id="cssValidation">
+        <script src="https://my.gblearn.com/js/loadscript.js"></script>
+    </div>
+</body>
+</html>
