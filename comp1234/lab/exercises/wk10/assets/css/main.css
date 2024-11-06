@@ -41,19 +41,12 @@ label span {
     color: red;
 }
 
-
 .box {
     margin-bottom: 20px;
 }
 
-.box .split {
-    display: flex;
-    justify-content: space-between;
-}
-
 .box .split input {
-    flex-shrink: 0;
-    width: 48%;
+    width: calc(50% - 3px);
 }
 
 button[type="submit"] {
