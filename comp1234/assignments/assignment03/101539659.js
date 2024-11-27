@@ -6,14 +6,6 @@ function part1() {
   const labSessionDay = "Wednesday";
   // const semester = "Fall 2023";
 
-  document.write(
-    `<p style="margin-left: auto; margin-left: auto; width: fit-content;">
-      <b>Student ID:</b> ${studentID} <b>Full Name:</b> ${fullName}
-      <br>
-      <b>Lab Professor:</b> ${labProfessor} <b>Lab Session Day:</b> ${labSessionDay}
-    </p>`
-  );
-
   let encodedStudentID = "";
   let encodedFullName = "";
   let encodedLabProfessor = "";
@@ -29,15 +21,24 @@ function part1() {
     encodedLabProfessor += String.fromCharCode(labProfessor.charCodeAt(i) + 1);
   }
   for (let i = 0; i < labSessionDay.length; i++) {
-    encodedLabSessionDay += String.fromCharCode(labSessionDay.charCodeAt(i) + 1);
+    encodedLabSessionDay += String.fromCharCode(
+      labSessionDay.charCodeAt(i) + 1
+    );
   }
 
   document.write(
-    `<p style="margin-left: auto; margin-left: auto; width: fit-content;">
-      <b>Encoded Student ID:</b> ${encodedStudentID} <b>Encoded Full Name:</b> ${encodedFullName}
-      <br>
-      <b>Encoded Lab Professor:</b> ${encodedLabProfessor} <b>Encoded Lab Session Day:</b> ${encodedLabSessionDay}
-    </p>`
+    `<div style="position: fixed; right: 0; bottom: 0">
+      <p>
+        <b>Student ID:</b> ${studentID} <b>Full Name:</b> ${fullName}
+        <br>
+        <b>Lab Professor:</b> ${labProfessor} <b>Lab Session Day:</b> ${labSessionDay}
+      </p>
+      <p>
+        <b>Encoded Student ID:</b> ${encodedStudentID} <b>Encoded Full Name:</b> ${encodedFullName}
+        <br>
+        <b>Encoded Lab Professor:</b> ${encodedLabProfessor} <b>Encoded Lab Session Day:</b> ${encodedLabSessionDay}
+      </p>
+    </div>`
   );
 }
 
@@ -129,7 +130,7 @@ function part5(array) {
   let evens = [];
   let oddSum = 0;
   let evenSum = 0;
-  
+
   for (let i = 0; i < array.length; i++) {
     if (array[i] % 2 === 0) {
       evens.push(array[i]);
@@ -139,20 +140,20 @@ function part5(array) {
       oddSum += array[i];
     }
   }
-  
+
   array.length = 0;
-  
+
   for (let i = 0; i < odds.length; i++) {
     array.push(odds[i]);
   }
-  
+
   for (let i = 0; i < evens.length; i++) {
     array.push(evens[i]);
   }
-  
+
   array.push(oddSum);
   array.push(evenSum);
-  
+
   _return = array;
   /* Your code ends here.
        Don't add or change anything after this line.*/
