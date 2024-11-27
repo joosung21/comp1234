@@ -24,6 +24,6 @@ switch (operation) {
     ).innerHTML = `Invalid menu number. please enter a number between 1 and 4`;
 }
 
-document.getElementById("displayTotal").innerHTML = `${num1} ${
-  operators[operation - 1]
-} ${num2} = ${total}`;
+document
+  .getElementById("displayTotal")
+  .append(` ${num1} ${operators[operation - 1]} ${num2} = ${total}`);
