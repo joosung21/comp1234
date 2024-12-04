@@ -1,0 +1,25 @@
+table,
+th,
+td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+table {
+  font-size: 1.1em;
+}
+
+tbody td:nth-child(odd) {
+  background-color: sandybrown;
+}
+
+thead th,
+tfoot td {
+  background-color: lightblue;
+}
+
+tfoot td {
+  font-weight: bold;
+  text-align: center;
+}
